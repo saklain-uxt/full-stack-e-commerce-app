@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import Title from '../components/Title'
 import { assets } from '../assets/frontend_assets/assets'
-import NewsletterBox from '../components/NewsletterBox'
+import Newsletterbox from '../components/Newsletterbox'
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -121,7 +121,7 @@ const About = () => {
       </div>
 
       {/* 🔹 NEWSLETTER */}
-      <NewsletterBox />
+      <Newsletterbox />
     </div>
   )
 }
