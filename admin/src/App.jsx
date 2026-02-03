@@ -12,7 +12,7 @@ import  { Toaster } from 'react-hot-toast';
 
 
  export const backendUrl=import.meta.env.VITE_BACKEND_URL
- export const currency=import.meta.env.VITE_CURRENCY
+ export const currency="$";
 
 const App = () => {
   // const [token,setToken]=useState('');
