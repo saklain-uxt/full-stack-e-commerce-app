@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Prata&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a.active hr{
+      display:block;
+}
+*{
+   font-family: Outfit;
+   
+}
+
+.prata-regular {
+  font-family: "Prata", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+@media (max-width:640px){
+      a.active{
+            background-color: black;
+            color: white;
+      }
+}
+
+
+
+.input-ui {
+  @apply border border-gray-300 rounded-lg px-4 py-2 w-full
+  focus:outline-none focus:ring-2 focus:ring-black
+  transition-all duration-200;
+}
+
+.payment-card {
+  @apply flex items-center gap-3 border rounded-lg p-3 cursor-pointer
+  hover:shadow-md hover:scale-[1.02]
+  transition-all duration-200;
+}
+
+.payment-card.active {
+  @apply border-black shadow-lg;
+}
+
+.radio {
+  @apply w-4 h-4 border rounded-full;
+}
+
+.radio.checked {
+  @apply bg-green-500;
+}
+
+.btn-primary {
+  @apply bg-black text-white px-16 py-3 rounded-lg
+  hover:scale-105 hover:shadow-lg
+  active:scale-95 transition-all duration-200;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateX(-10px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease;
+}
+
+.animate-slideUp {
+  animation: slideUp 0.5s ease;
+}
+
+
