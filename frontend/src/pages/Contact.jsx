@@ -3,7 +3,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import Title from '../components/Title'
 import { assets } from '../assets/frontend_assets/assets'
-import NewsletterBox from '../components/NewsletterBox'
+import Newsletterbox from '../components/Newsletterbox' 
 
 const Contact = () => {
   return (
@@ -81,7 +81,7 @@ const Contact = () => {
       </div>
 
       {/* Newsletter */}
-      <NewsletterBox />
+      <Newsletterbox />
     </div>
   )
 }
